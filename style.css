@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+#drum-machine {
+  background-color: #ccc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.drum-pad,
+.drum-pad:link,
+.drum-pad:visited {
+  background-color: #999;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.8rem 2.4rem;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.drum-pad:hover,
+.drum-pad:active {
+  background-color: #777;
+  box-shadow: 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.viewer {
+  background-color: #999;
+  width: 22rem;
+  border-radius: 7px;
+  padding: 1.8rem;
+}
+
+#display {
+  text-align: center;
+}
